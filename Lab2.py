@@ -12,7 +12,6 @@ def get_user_input():
     ListFloats= list(map(float,afterSplit))
     return ListFloats
     
-    
 def calc_average_temperature(ListFloats):
     average = sum(ListFloats)/len(ListFloats)
     return average
@@ -22,8 +21,6 @@ def calc_min_max_temperature(ListFloats):
     maxi = ListFloats[-1]
     return mini, maxi
     
-
-
 def main():
     display_main_menu()
     numberList = get_user_input()
