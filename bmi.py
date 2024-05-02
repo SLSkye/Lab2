@@ -5,13 +5,15 @@ def calculate_bmi(height, weight):
     bmi=weight/(height*height)
 
     print("BMI is " + str(bmi))
-    return bmi
 
-value=calculate_bmi(weight=57, height=1.73)
+    if  bmi< 18.5:
+        print("Under Weight")
+        retVal = -1
+    elif bmi > 25.0:
+        print("Over Weight")
+        retVal = 1
+    else:
+        print("Normal Weight")
+        retVal = 0
 
-if  value< 18.5:
-    print("Under Weight")
-elif value > 25.0:
-    print("Over Weight")
-else:
-    print("Normal Weight")
+    return retVal
