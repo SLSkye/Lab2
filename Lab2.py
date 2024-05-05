@@ -1,7 +1,4 @@
-print("ET0735 (DevOps for AIOT) - Lab 2 - Introduction to Python")
-def funcName(parameter1,parameter2):
-    print("this is a dummy function")
-    return 10
+
 
 def display_main_menu():
     print("Enter some numbers separated by commas(e.g. 5, 67, 32)")
